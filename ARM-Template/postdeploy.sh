@@ -1,9 +1,11 @@
 adtname=$1
-egname=$2
-egid=$3
+rgname_$2
+egname=$3
+egid=$4
 funcappid=$4
 
 echo "adt name: ${adtname}"
+echo "rgname:" ${rgname}
 echo "egname: ${egname}"
 echo "egid: ${egid}"
 echo "funcappid: ${funcappid}"
@@ -16,4 +18,4 @@ az dt endpoint create eventgrid --dt-name $adtname --eventgrid-resource-group $r
 az dt route create --dt-name $adtname --endpoint-name "$egname-ep" --route-name "$egname-rt"
 
 # Create Subscriptions
-az eventgrid event-subscription create --name "$egname-updatefeaturestate-sub" --source-resource-id $egid --endpoint "$funcappid/functions/updatemapsfeaturestate" --endpoint-type azurefunction
+az eventgrid event-subscription create --name "$egname-ufstate-sub" --source-resource-id $egid --endpoint "$funcappid/functions/updatemapsfeaturestate" --endpoint-type azurefunction
