@@ -12,6 +12,7 @@ echo "funcappid: ${funcappid}"
 
 # echo 'installing azure cli extension'
 az config set extension.use_dynamic_install=yes_without_prompt
+az extension add --name azure-iot -y
 
 # az eventgrid topic create -g $rgname --name $egname -l $location
 az dt endpoint create eventgrid --dt-name $adtname --eventgrid-resource-group $rgname --eventgrid-topic $egname --endpoint-name "$egname-ep"
