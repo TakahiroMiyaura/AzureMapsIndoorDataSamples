@@ -1,5 +1,5 @@
 adtname=$1
-rgname_$2
+rgname=$2
 egname=$3
 egid=$4
 funcappid=$5
