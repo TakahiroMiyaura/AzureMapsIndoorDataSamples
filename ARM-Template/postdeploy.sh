@@ -2,7 +2,7 @@ adtname=$1
 rgname_$2
 egname=$3
 egid=$4
-funcappid=$4
+funcappid=$5
 
 echo "adt name: ${adtname}"
 echo "rgname:" ${rgname}
