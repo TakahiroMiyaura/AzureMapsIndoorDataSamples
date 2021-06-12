@@ -1,0 +1,334 @@
+{
+	"styles": [
+		{
+			"keyname": "alert",
+			"type": "boolean",
+			"rules": [
+				{
+					"true": "#FF0000",
+					"false": "#00FF00"
+				}
+			]
+		},
+		{
+			"keyname": "ambientTemperature",
+			"type": "number",
+			"rules": [
+				{
+					"range": {
+						"exclusiveMaximum": -10
+					},
+					"color": "#e71123"
+				},
+				{
+					"range": {
+						"minimum": -10,
+						"exclusiveMaximum": -8
+					},
+					"color": "#fe8c01"
+				},
+				{
+					"range": {
+						"minimum": -8,
+						"exclusiveMaximum": -6
+					},
+					"color": "#fef200"
+				},
+				{
+					"range": {
+						"minimum": -6,
+						"exclusiveMaximum": -4
+					},
+					"color": "#187d1d"
+				},
+				{
+					"range": {
+						"minimum": -4,
+						"exclusiveMaximum": -0
+					},
+					"color": "#0278da"
+				},
+				{
+					"range": {
+						"maximum": 0
+					},
+					"color": "#00204e"
+				},
+				{
+					"range": {
+						"minimum": 0,
+						"exclusiveMaximum": 4
+					},
+					"color": "#0278da"
+				},
+				{
+					"range": {
+						"minimum": 4,
+						"exclusiveMaximum": 6
+					},
+					"color": "#187d1d"
+				},
+				{
+					"range": {
+						"minimum": 6,
+						"exclusiveMaximum": 8
+					},
+					"color": "#fef200"
+				},
+				{
+					"range": {
+						"minimum": 8,
+						"exclusiveMaximum": 10
+					},
+					"color": "#fe8c01"
+				},
+				{
+					"range": {
+						"minimum": 10
+					},
+					"color": "#e71123"
+				}
+			]
+		},
+		{
+			"keyname": "power",
+			"type": "number",
+			"rules": [
+				{
+					"range": {
+						"exclusiveMaximum": 700
+					},
+					"color": "#e71123"
+				},
+				{
+					"range": {
+						"minimum": 700,
+						"exclusiveMaximum": 800
+					},
+					"color": "#fe8c01"
+				},
+				{
+					"range": {
+						"minimum": 800,
+						"exclusiveMaximum": 900
+					},
+					"color": "#fef200"
+				},
+				{
+					"range": {
+						"minimum": 900,
+						"exclusiveMaximum": 1000
+					},
+					"color": "#187d1d"
+				},
+				{
+					"range": {
+						"minimum": 1000,
+						"exclusiveMaximum": 1100
+					},
+					"color": "#0278da"
+				},
+				{
+					"range": {
+						"maximum": 1100
+					},
+					"color": "#00204e"
+				},
+				{
+					"range": {
+						"minimum": 1100,
+						"exclusiveMaximum": 1200
+					},
+					"color": "#0278da"
+				},
+				{
+					"range": {
+						"minimum": 1200,
+						"exclusiveMaximum": 1300
+					},
+					"color": "#187d1d"
+				},
+				{
+					"range": {
+						"minimum": 1300,
+						"exclusiveMaximum": 1400
+					},
+					"color": "#fef200"
+				},
+				{
+					"range": {
+						"minimum": 1400,
+						"exclusiveMaximum": 1500
+					},
+					"color": "#fe8c01"
+				},
+				{
+					"range": {
+						"minimum": 1500
+					},
+					"color": "#e71123"
+				}
+			]
+		},
+		{
+			"keyname": "rotorSpeed",
+			"type": "number",
+			"rules": [
+				{
+					"range": {
+						"exclusiveMaximum": 0
+					},
+					"color": "#e71123"
+				},
+				{
+					"range": {
+						"minimum": 0,
+						"exclusiveMaximum": 2
+					},
+					"color": "#fe8c01"
+				},
+				{
+					"range": {
+						"minimum": 2,
+						"exclusiveMaximum": 4
+					},
+					"color": "#fef200"
+				},
+				{
+					"range": {
+						"minimum": 4,
+						"exclusiveMaximum": 6
+					},
+					"color": "#187d1d"
+				},
+				{
+					"range": {
+						"minimum": 8,
+						"exclusiveMaximum": 10
+					},
+					"color": "#0278da"
+				},
+				{
+					"range": {
+						"maximum": 10
+					},
+					"color": "#00204e"
+				},
+				{
+					"range": {
+						"minimum": 10,
+						"exclusiveMaximum": 12
+					},
+					"color": "#0278da"
+				},
+				{
+					"range": {
+						"minimum": 12,
+						"exclusiveMaximum": 14
+					},
+					"color": "#187d1d"
+				},
+				{
+					"range": {
+						"minimum": 16,
+						"exclusiveMaximum": 18
+					},
+					"color": "#fef200"
+				},
+				{
+					"range": {
+						"minimum": 18,
+						"exclusiveMaximum": 20
+					},
+					"color": "#fe8c01"
+				},
+				{
+					"range": {
+						"minimum": 20
+					},
+					"color": "#e71123"
+				}
+			]
+		},
+		{
+			"keyname": "windSpeed",
+			"type": "number",
+			"rules": [
+				{
+					"range": {
+						"exclusiveMaximum": 0
+					},
+					"color": "#e71123"
+				},
+				{
+					"range": {
+						"minimum": 0,
+						"exclusiveMaximum": 2
+					},
+					"color": "#fe8c01"
+				},
+				{
+					"range": {
+						"minimum": 2,
+						"exclusiveMaximum": 3
+					},
+					"color": "#fef200"
+				},
+				{
+					"range": {
+						"minimum": 3,
+						"exclusiveMaximum": 4
+					},
+					"color": "#187d1d"
+				},
+				{
+					"range": {
+						"minimum": 4,
+						"exclusiveMaximum": 7
+					},
+					"color": "#0278da"
+				},
+				{
+					"range": {
+						"maximum": 7
+					},
+					"color": "#00204e"
+				},
+				{
+					"range": {
+						"minimum": 7,
+						"exclusiveMaximum": 8
+					},
+					"color": "#0278da"
+				},
+				{
+					"range": {
+						"minimum": 8,
+						"exclusiveMaximum": 9
+					},
+					"color": "#187d1d"
+				},
+				{
+					"range": {
+						"minimum": 9,
+						"exclusiveMaximum": 9.5
+					},
+					"color": "#fef200"
+				},
+				{
+					"range": {
+						"minimum": 9.5,
+						"exclusiveMaximum": 10
+					},
+					"color": "#fe8c01"
+				},
+				{
+					"range": {
+						"minimum": 10
+					},
+					"color": "#e71123"
+				}
+			]
+		}
+	]
+}
